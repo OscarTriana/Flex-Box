@@ -1,0 +1,396 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    font-family: sans-serif;
+    gap: 10px;
+    background-color: #272944;
+}
+
+.body-border{
+    display: flex;
+    height: 100vh;
+    border-radius: 40px;
+    font-family: sans-serif;
+    flex: 1;
+    background-color: #363853;
+}
+
+/* ASIDE PRINCIPAL */
+
+.Principal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 15%;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    gap: 10px;
+    font-size: 14px;
+    color: #a7a7a7;
+    background-color: #272944;
+}
+
+/* (secion 1) Primer articulo */
+.Principal>.circulo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 7rem;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.circulo>span{
+    display: flex;
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    background-color: #55576b;
+}
+
+
+/* (seccion 2) segundos articulos */
+
+.articulos-principal{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    margin-top: 20px;
+    height: 21rem;
+}
+
+#articulos{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+#articulos>.cuadrado{
+    display: flex;
+    width: 20px;
+    height: 20px;
+    background-color: #55576b;
+}
+
+
+/*  (seccion 3) Tercer articulo */
+
+.articulos-ajustes{
+    display: flex;
+    align-self: center;
+    padding-right: 25px;
+    flex-direction: column;
+    height: 5rem;
+}
+
+
+
+/* Menu general (secundario) */
+
+.secundario{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+
+/*  barra de navegacion */
+.navegar{
+    display: flex;
+    justify-content: space-between;
+}
+
+.navegar>#uno{
+    display: flex;
+    align-items: center;
+    width: 40%;
+    height: 2rem;
+    gap: 8px;
+    color: #a7a7a7;
+    font-size: 12px;
+    padding-left: 10px;
+    background-color:#55576b;
+}
+
+/* articulos */
+.navegar>#uno>.cuadrado{
+    display: flex;
+    width: 25px;
+    height:23px;
+    background-color: #4c4e6b;
+}
+
+.navegar>#none{
+    width: 41%;
+}
+
+.navegar>#tres{
+    display: flex;
+    align-items: center;
+    padding-left:15px;
+    width: 5%;
+    font-size: 14px;
+    color: #fff;
+    background-color: #363853;
+}
+
+.navegar>#cuatro{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.navegar>#cuatro>.cuadrado{
+    display: flex;
+    width: 30px;
+    height: 30px;
+    background-color:#55576b;
+
+}
+
+/* seccion principal */
+
+.seccion-principal{
+    display: flex;
+    flex-direction: column;
+}
+
+.seccion-principal>header{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #cec7c7;
+}
+
+.seccion-principal>header>.cabecera{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 14%;
+    color: #cec7c7;
+    background-color: #55576b;
+    font-size: 7px;
+    height: 2rem;
+}
+
+.cabecera   h1{
+    padding-left: 24px;
+}
+
+
+.seccion-principal>header>.cabecera>.cuadrado{
+    display: flex;
+    width: 20px;
+    height: 20px;
+    background-color:#4c4e6b;
+}
+
+/* seccion de productos */
+
+.seccion-secundaria{
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 0;
+}
+
+/* contenedor de titulos */
+
+.seccion-secundaria>.contenedor{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: gray;
+
+}
+
+
+.seccion-secundaria>.contenedor article{
+    display: flex;
+    align-items: center;
+    width: 25vh;
+    height: 3rem;
+}
+
+
+
+.seccion-secundaria>.contenedor>#one{
+    width: 23vh;
+    padding-left: 30px;
+    font-size: 9px;
+    gap: 5px;
+}
+
+.seccion-secundaria>.contenedor>#two{
+    width: 24vh;
+    padding-left: 10px;
+    font-size: 9px;
+}
+
+.seccion-secundaria>.contenedor>#three{
+    width: 27vh;
+    font-size: 9px;
+    padding-left: 15px;
+}
+
+.seccion-secundaria>.contenedor>#four{
+    width: 19vh;
+    font-size: 9px;
+}
+
+.seccion-secundaria>.contenedor>#five{
+    width: 17vh;
+    display: flex;
+    font-size: 9px;
+    align-items: center;
+    justify-content: center;
+}
+
+.seccion-secundaria>.contenedor>#six{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 27.7vh;
+    height: 1.5rem;
+    font-size: 9px;
+}
+
+
+
+/* seccion */
+
+.scroll{
+    display: flex;
+    flex-direction: column;
+    height: 28.4rem;
+    margin-right: 20px;
+    margin-top: 10px;
+    overflow: auto;
+    gap: 10px;
+}
+
+/* contenedor de productos (nombres, etc) */
+.container-products{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.container-products article{
+    display: flex;
+    align-items: center;
+    width: 25vh;
+    height: 3rem;
+}
+
+.container-products:hover{
+    background-color: #55576b;
+}
+
+
+.container-products>#uno{
+    width: 23vh;
+    padding-left: 30px;
+    font-size: 14px;
+    gap: 5px;
+    color: gray;
+}
+
+.container-products #circulo{
+    display: flex;
+    height: 35px;
+    width: 35px;
+    background-color: #55576b;
+    border-radius: 50px;
+}
+
+.container-products>.dos{
+    width: 24vh;
+    gap: 2px;
+    padding-left: 10px;
+    font-size: 14px;
+    color: #cec7c7;
+}
+
+.container-products>.dos h1{
+    display: flex;
+    flex-direction: column;
+}
+
+.container-products>.tres{
+    width: 30vh;
+    font-size: 12px;
+    padding-left: 15px;
+    color: gray;
+}
+
+.container-products>.cuatro{
+    width: 22.5vh;
+    font-size: 10px;
+    color: gray;
+}
+
+.container-products>.cinco{
+    display: flex;
+    width: 17vh;
+    color: #cec7c7;
+    font-size: 14px;
+    align-items: center;
+}
+
+.container-products>#seis{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15vh;
+    color: #cec7c7;
+    border: 1px solid;
+    height: 1.5rem;
+    font-size: 13px;
+}
+
+
+
+/* scoll */
+
+#container{
+    overflow:auto;
+    box-sizing: border-box;
+}
+
+/* Estilos para motores Webkit y blink (Chrome, Safari, Opera... )*/
+
+#container::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+#container::-webkit-scrollbar:vertical {
+    width:6px;
+}
+
+#container::-webkit-scrollbar-button:increment,.contenedor::-webkit-scrollbar-button {
+    display: none;
+} 
+
+#container::-webkit-scrollbar:horizontal {
+    height: 10px;
+}
+
+#container::-webkit-scrollbar-thumb {
+    background-color: #272944;
+    border-radius: 20px;
+    border: 1px solid #c7c7c7;
+}
+
+#container::-webkit-scrollbar-track {
+    border-radius: 10px;  
+}

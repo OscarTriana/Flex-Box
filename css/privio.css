@@ -1,0 +1,638 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+} 
+#body{
+    display: flex; 
+    height: 100vh;
+    flex-direction: column;
+    background-color: #21183c;
+}
+
+/* cabecera */
+.header{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1em;
+}
+/* identificador */
+#index{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 9rem;
+    background-color:  #21183c;
+    gap: 1em;
+}
+.subheader-one{
+    display: flex;
+    align-items: center;
+    flex: 1;    
+}
+
+
+/* .icono{
+
+}
+.logotipo{
+
+} */
+.subheader-two{
+    display: flex;
+    width: 4rem;
+    justify-content: space-around;
+    font-size: 1.2em;
+    gap: 1.5em;
+    position: relative;
+}
+/* conotenedor de articulos main */
+main{
+    height: calc(100vh - 9rem );
+    overflow: auto;
+    overflow-y: auto;
+}
+article{
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid #21183c ;
+    gap: 2em;
+    justify-content: space-between;
+    padding: .6em;
+    background-color: #3d3268;
+}
+.header-article{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: .5em;
+}
+.imagenPelicula > img{
+    height: 90px;
+    width: 90px;
+    border-radius:8px ;
+    
+}
+.imagenPelicula{
+    flex:1;
+    position: relative;
+}
+p{
+    color:  #515fda;
+}
+.namePelicula{
+    color: #A396E7;
+}
+i{
+    color: #6457ac;
+    font-size: 1.2em;
+}
+.fa-bars{
+    font-size: 1.8em;
+}
+.logotipo{
+    color: rgb(218, 217, 217);
+    font-size: 16px;
+    font-family: monospace;
+    padding-left: 1em;
+    display: flex;
+    gap: .5em;
+    align-items: center;
+}
+.lotype{
+    font-size: 1em;
+    color: rgb(230, 224, 224);
+    padding-left: 1em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.fa-ubuntu{
+    color: rgb(230, 224, 224);
+    font-size: 1.3em;
+}
+.feid{
+    position: absolute;
+    color: rgb(255, 255, 255);
+    right: 2.9em;
+    bottom: 1em;
+    font-weight: 1200;
+    font-size: .8em;
+    background-color: rgb(248, 64, 64);
+    opacity: 80%;
+    border-radius: 50%;
+    text-align: center;
+    width: .9em;
+    height: 1.1em;
+}
+.new,.neww,.newww{
+    background-color: #5FBA85;
+    border: none;
+    width: 6em;
+    height: 1.9em;
+    border-radius: 4px;
+    color: rgb(255, 255, 255);
+}
+.neww{
+    background-color: #EE63B6;
+}
+.newww{
+    background-color: #09c1DE;
+}
+.artR{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: .2em;
+    gap: 10px;
+    flex: 3;
+}
+.send h2{
+    color: white;
+}
+.fa-circle-play{
+    position: absolute;
+    left: 2.8em;
+    top: 2.8em;
+    font-size: 1.4em;
+    color: #dbd9e5;
+}
+.fa-lock{
+    left: 100%;
+    margin-left: 5em;
+    top: 12%;
+    position: absolute;
+}
+
+.footart{
+    position: relative;
+}
+
+#conte{
+    display: flex;
+    justify-content: space-around;
+    color: #3d3268;
+    
+}
+.az{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.hist{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#artt1{
+    border: 1px solid;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 12rem;
+    height:15rem;
+    position: relative;
+    background-color: #21183c;
+}
+
+#artt2{
+    border: 1px solid;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 12rem;
+    height:15rem;
+    position: relative;
+    background-color: #21183c;
+}
+
+#artt3{
+    border: 1px solid;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 12rem;
+    height:15rem;
+    position: relative;
+    background-color: #21183c;
+}
+
+#artt4{
+    border: 1px solid;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 12rem;
+    height:15rem;
+    position: relative;
+    background-color: #21183c;
+}
+
+#artt5{
+    border: 1px solid;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 12rem;
+    height:15rem;
+    position: relative;
+    background-color: #21183c;
+}
+
+#artt6{
+    border: 1px solid;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 12rem;
+    height:15rem;
+    position: relative;
+    background-color: #21183c;
+}
+.fa-circle{
+    position: absolute;
+    top: 60%;
+    left: 75%;
+    font-size: 1.7em;
+    color: white;
+}
+#mainsearch{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: space-around;
+    background-color: #21183c;
+}
+#artt img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+
+#conte{
+    display: flex;
+    justify-content: space-around;
+    color: #3d3268;
+    
+}
+.az{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.hist{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#artt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    width: 10rem;
+    height:15rem;
+    position: relative;
+    background-color: #21183c;
+}
+
+
+#artt3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    border: 1px solid #21183c;
+    width: 10rem;
+    height:15rem;
+    position: relative;
+    background-color: #21183c;
+}
+#artt3 img{
+    width: 100%;
+    height: 83%;
+    border-radius: 20px;
+}
+
+
+
+#artt5{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #21183c;
+    width: 10rem;
+    height:15.7rem;
+    position: relative;
+    margin-top: 6px;
+    background-color: #21183c;
+}
+#artt5 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+
+
+
+/* Search css */
+
+.search{
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+}
+
+
+.cabecera{
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    background-color: #21183c;
+}
+
+#artt>a{
+    text-decoration: none;
+}
+
+#artt3>a{
+    text-decoration: none;
+}
+
+#artt5>a{
+    text-decoration: none;
+}
+
+
+
+.seccion-principal{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.seccion-principal>i{
+    color: #f9f9fa;
+}
+.containerone{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.containerone>i{
+    font-size: 30px;
+    color: #f9f9fa;
+}
+
+.containerone>p{
+    font-size: 30px;
+    font-weight: 100;
+    color: #f9f9fa;
+}
+
+.seccion-secundaria{
+    display: flex;
+    margin-top: 20px;
+    color: #f9f9fa;
+    font-weight: 800;
+}
+
+.seccion-tercera{
+    display: flex;
+    height: 3rem;
+    margin-top: 10px;
+    justify-content: space-between;
+}
+
+
+#articulo-uno{
+    display: flex;
+    align-items: center;
+    width: 30vh;
+    border-bottom: 1px solid;
+    color: black;
+    background-color: #21183c;
+}
+
+#articulo-uno>i{
+    display: flex;
+    align-items: center;
+    margin-left: -10px;
+}
+#articulo-uno>i>input{
+    width: 29vh;
+    background-color: #21183c;
+    height: 2rem;
+    margin-left: 4px;
+    border-style: none;
+    color: #fff;
+}
+::placeholder{
+    font-size: 18px;
+    padding: 0px 8px;
+    color: #3d3268;
+}
+#articulo-dos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #21183c;
+    margin-top: 8px;
+}
+
+#articulo-dos>span>p{
+    font-size: 10px;
+    color: #3d3268;
+}
+
+#articulo-dos>span{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#articulo-dos>span>i{
+    display: flex;
+    font-size: 30px;
+}
+
+
+
+/* trailer */
+
+.trailer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    font-family: sans-serif;
+    background-color: #21183c;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    background-image: url(../imagenes/img-privio/wonder-woman.jpg);
+    background-size: cover;
+    position: static;
+    margin-top: 20px;
+    height: 15rem;
+    gap: 10px;
+    width: 90%;
+    border-radius: 10px 10px 0px 0px;
+    border-bottom: 4px solid blue;
+}
+
+.principal{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.principal a{
+    display: flex;
+    align-items: center;
+    width: 2em;
+    color: #f9f9fa;
+    height: 1em;
+    text-decoration: none;
+}
+
+.principal a i{
+    font-size: 20px;
+    color: #f9f9fa;
+}
+
+
+.secundaria>i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -20px;
+    position:static;
+    font-size: 40px;
+}
+
+.tercera{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+#accion{
+    display: flex;
+    gap: 20px;
+    margin-left: 30px;
+}
+
+#play>i{
+    color: #f9f9fa;
+}
+
+.volumen{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.volumen>i{
+    color: #f9f9fa;
+}
+
+.volumen>p{
+    color: #f9f9fa;
+    font-size: 13px;
+}
+
+.estrellas{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-right: 30px;
+}
+
+.estrellas>p{
+    display: flex;
+    align-items: center;
+    border: 1px solid #f9f9fa;
+    color: #f9f9fa;
+    height: 1rem;
+    font-weight: 800;
+    font-size: 14px;
+}
+
+.estrellas>i{
+    color: #f9f9fa;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+.sub{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.sub>h1{
+    font-size: 28px;
+    color: #f9f9fa;
+}
+
+.sub>p{
+    display: flex;
+    margin-top: 10px;
+    color: #9780f1;
+    font-size: 14px;
+}
+
+.texto>p{
+    display: flex;
+    width: 44vh;
+    margin-top: 10px;
+    color: #9780f1;
+}
+
+.boton{
+    display: flex;
+    margin-top: 20px;
+    border-radius: 50px;
+}
+
+button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    width: 42vh;
+    background-color: #21183c;
+    gap: 10px;
+    border: 3px solid #3d3268;
+    height: 4rem;
+}
+
+button>h1{
+    font-size: 15px;
+    color: #9780f1;
+}
+
+button>i{
+    font-size: 30px;
+}

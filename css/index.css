@@ -1,0 +1,218 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Merienda One', cursive;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #000;
+}
+
+/* cabecera */
+.cabeza{
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 6rem;
+    color: #fff;
+}
+
+.cabeza>div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.cabeza>div>i{
+    font-size: 15px;
+}
+
+/* contenedor de articulos */
+
+.menu-contenedor{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    overflow: auto;
+    height: calc(100vh - 6rem - 4rem);
+    gap: 10px;
+}
+
+/*  articulos */
+.menu-contenedor>article{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    background-color: #000;
+    border-radius: 50px;
+    width: 50vh;
+    height: 10rem;
+    box-shadow: 0px 0px 2px 2px fuchsia;
+    cursor:default;
+    transition: all 400ms ease;
+}
+
+.menu-contenedor>article{
+    color: transparent;
+    -webkit-background-clip: article; /* chrome navegador */
+    background-clip: article;
+    -moz-background-clip: article; /* navegador modzilla */
+    animation: article 5s linear infinite;
+}
+
+
+@keyframes article{
+    0%{
+        filter: hue-rotate(0deg);
+    }
+
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}
+
+
+
+.menu-contenedor>article:hover{
+    box-shadow: 0px 1px 1px 1px #36FBDD;
+    transform: translateY(-5%);
+}
+
+.menu-contenedor>article>a{
+    display: flex;
+    position: relative;
+    align-items: center;
+    gap:   10px;
+    padding: 10px 10px;
+    color: #fff;
+    font-size: 17px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: 5s;
+    letter-spacing: 4px;
+}
+
+i{
+    font-size: 25px;
+}
+
+.menu-contenedor>article>a:hover{
+    background-color: #36FBDD;
+    color: #000;
+    border-radius: 10px;
+    box-shadow: 0 0 1px #36FBDD,
+                0 0 31px #36FBDD,
+                0 0 6px #36FBDD,
+                0 0 6px #36FBDD;
+
+}
+
+/* articulos y ancla estilos de span */
+.menu-contenedor a span{
+    position: absolute;
+    display: block;
+}
+
+/* span llamados uno por uno y editados con css */
+
+.menu-contenedor a span:nth-child(1){
+    top: 0px;
+    left: -100px;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent,
+    #fff);
+    animation: btn-anim1 1s linear infinite;
+    
+}
+
+@keyframes btn-anim1{
+    0%{
+        left: -100%;
+    }
+    50%, 100%{
+        left: 100%;
+    }
+}
+
+.menu-contenedor a span:nth-child(2){
+    top: -100px;
+    right: 0px;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent,
+    #fff);
+    animation: btn-anim2 1s linear infinite;
+    animation-delay: .25s;
+    
+}
+
+@keyframes btn-anim2{
+    0%{
+        top: -100%;
+    }
+    50%, 100%{
+        top: 100%;
+    }
+}
+
+.menu-contenedor a span:nth-child(3){
+    right: -100%;
+    bottom: 0;
+    height:  2px;
+    width: 100%;
+    background: linear-gradient(270deg, transparent,
+    #fff);
+    animation: btn-anim3 1s linear infinite;
+    animation-delay: .5s;
+}
+
+@keyframes btn-anim3{
+    0%{
+        right:  -100%;
+    }
+    50%, 100%{
+        right: 100%;
+    }
+}
+
+
+.menu-contenedor a span:nth-child(4){
+    bottom: -100px;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(270deg, transparent,
+    #fff);
+    animation: btn-anim4 1s linear infinite;
+    animation-delay: .75s;
+}
+
+@keyframes btn-anim4{
+    0%{
+        bottom:  -100%;
+    }
+    50%, 100%{
+        bottom: 100%;
+    }
+}
+
+
+/* pie de pagina */
+
+.pie-de-pagina{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 4rem;
+    color: #fff;
+}
+

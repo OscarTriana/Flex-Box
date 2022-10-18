@@ -1,0 +1,585 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    font-family: sans-serif;
+    gap: 10px;
+    background-color: #55576b;
+}
+
+.body-border{
+    display: flex;
+    height: 100vh;
+    border-radius: 40px;
+    font-family: sans-serif;
+    flex: 1;
+    background-color: #363853;
+}
+
+/* ASIDE PRINCIPAL */
+
+.Principal{
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    gap: 10px;
+    font-size: 14px;
+    border-radius: 30px;
+    background-color: #272944;
+    color: #b8b6b6
+}
+
+/* (secion 1) Primer articulo */
+.Principal>.circulo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 7rem;
+    font-size: 24px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    color: #f9f9fa;
+}
+
+
+
+.Principal>.circulo>span p{
+    background-color: #404bda;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    position: absolute;
+    display: flex;
+    left: 79px;
+    top: 101px;
+}
+
+.circulo h1{
+    display: flex;
+    position: relative;
+    font-size: 27px;
+    right: 3px;
+}
+.circulo>span{
+    display: flex;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    background-color: #55576b;
+}
+
+
+/* (seccion 2) segundos articulos */
+
+.articulos-principal{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    height: 21rem;
+    font-size: 15px;
+}
+
+#articulos{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+#articulos>.cuadrado{
+    display: flex;
+    width: 20px;
+    height: 20px;
+    margin-top: 8px;
+}
+
+
+/*  (seccion 3) Tercer articulo */
+
+.articulos-ajustes{
+    display: flex;
+    align-self: center;
+    padding-right: 10px;
+    flex-direction: column;
+    height: 5rem;
+    font-size: 15px;
+}
+
+
+/* Menu general (secundario) */
+
+.secundario{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+
+/*  barra de navegacion */
+.navegar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 3rem;
+}
+
+.navegar>#uno{
+    display: flex;
+    align-items: center;
+    width: 40%;
+    height: 2rem;
+    border-radius: 20px;
+    padding-left: 20px;
+    gap: 10px;
+    color: #c7c7c7;
+    background-color: #272944;
+}
+
+.navegar>#uno p{
+    font-size: 12px;
+    color: #b8b6b6;
+}
+
+/* articulos */
+.navegar>#uno>.cuadrado{
+    display: flex;
+    align-items: center;
+}
+
+
+.navegar>#none{
+    width: 42%;
+}
+
+.navegar>#tres{
+    display: flex;
+    align-items: center;
+    padding-left:15px;
+    width: 5%;
+    height: 2rem;
+    font-size: 14px;
+    color: #f9f9fa;
+    background-color: #272944;
+    border-radius: 40px;
+    gap: 8px;
+}
+
+.navegar>#cuatro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.navegar>#cuatro>.cuadrado{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    background-color: #272944;
+    border-radius: 50%;
+}
+
+.navegar>#cuatro>.cuadrado p{
+    display: flex;
+    width: 7px;
+    height: 7px;
+    right: 78px;
+    transform: translatey(-5px);
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+}
+
+
+.navegar>#cuatro>.imagen{
+    display: flex;
+    width: 40px;
+    height: 40px;
+    background-color:#272944;
+    border-radius: 50px;
+}
+
+.navegar>#cuatro>.imagen img{
+    display: flex;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+#icono{
+    color: #fff;
+}
+
+/* seccion principal */
+
+.seccion-principal{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.seccion-principal>header{
+    display: flex;
+    width: 38rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #f9f9fa;
+}
+
+/* Primer hijo */
+.seccion-principal>.primer-hijo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 14%;
+    height: 2rem;
+    border-radius: 50px;
+    background-color: #272944;
+    color: #f9f9fa;
+}
+.primer-hijo h1{
+    font-size: 11px;
+}
+
+/* segundo hijo */
+
+.seccion-principal>.segundo-hijo{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 14%;
+    height: 2rem;
+    border-radius: 50px;
+    background-color: #272944;
+    color: #f9f9fa;
+}
+.segundo-hijo h1{
+    font-size: 11px;
+}
+
+/* tercer hijo */
+
+.seccion-principal>.tercer-hijo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 14%;
+    height: 2rem;
+    border-radius: 50px;
+    background-color: #272944;
+    color: #f9f9fa;
+}
+.tercer-hijo h1{
+    font-size: 11px;
+}
+
+/* editar icono (tamaño) */
+#arrow{
+    font-size: 12px;
+}
+
+
+
+/* seccion secundaria (contenedor de articulos */
+
+.scroll{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    height: 35rem;
+    overflow: auto;
+    gap: 10px;
+    background-color: #272944;
+    border-radius: 20px;
+}
+
+/* primer articulo inicial y va con todos */
+.article1-products{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    background-color: #363853;
+    width: 50vh;
+    height: 18.5rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 35px;
+}
+
+/* imagen del articulo */
+.article1-products img{
+    display: flex;
+    width: 50vh;
+    height: 8rem;
+    border-radius: 35px 35px 5px 5px;
+}
+
+/* boton */
+.article1-products>#boton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #5BFA85;
+    color: #fff;
+    margin-top: -40px;
+    border-radius: 20px;
+    margin-left: 22px;
+    margin-bottom: 20px;
+    width: 10vh;
+    height: 1.5rem;
+}
+
+/* tamaño letra boton */
+.article1-products span p{
+    font-size: 14px;
+}
+
+/* fecha y nombre con foto modificada */
+.seccion-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.seccion-container>.container{
+    font-size: 11px;
+    margin-left: 20px;
+    color: #b8b6b6;
+}
+
+.seccion-container>.sub-container{
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    gap: 10px;
+}
+
+.seccion-container>.sub-container span{
+    display: flex;
+    width: 35px;
+    height: 35px;
+    background-color: #363853;
+    border-radius: 50px;
+}
+
+.seccion-container>.sub-container span img{
+    display: flex;
+    width: 35px;
+    height: 35px;
+    border-radius: 50px;
+}
+.seccion-container>.sub-container h1{
+    font-size: 14px;
+    color: #dfdddd;
+}
+
+/* texto grande */
+
+.texto-grande{
+    color: #f9f9fa;
+    font-size: 16px;
+    margin-left: 20px;
+    margin-top: 8px;
+}
+
+/* boton de iconos */
+
+.boton-iconos{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.boton-iconos>#button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    border: 1px solid;
+    color: #404bda;
+    width: 18vh;
+    margin-left: 20px;
+    height: 2rem;
+}
+
+.boton-iconos>#icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 22px;
+    gap: 12px;
+    color: #f9f9fa;
+}
+
+#one{
+    display: flex;
+    gap: 4px;
+}
+
+#two{
+    display: flex;
+    gap: 4px;
+}
+
+#three{
+    display: flex;
+    gap: 4px;
+}
+
+
+/* cambio de color de boton ( boton-iconos) */
+
+
+.boton-iconos>#button-dos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    border: 1px solid;
+    color: #1ce476;
+    width: 20vh;
+    margin-left: 20px;
+    height: 2rem;
+}
+
+
+.boton-iconos>#button-tres{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    border: 1px solid;
+    color: #9e37c7;
+    width: 18vh;
+    margin-left: 20px;
+    height: 2rem;
+}
+
+
+/* boton e icono articulo 6 */
+
+.boton-iconos-seis{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 36px;
+}
+
+.boton-iconos-seis>#button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    border: 1px solid;
+    color:rgb(247, 86, 86);
+    width: 18vh;
+    margin-left: 20px;
+    height: 2rem;
+}
+
+.boton-iconos-seis>#icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 22px;
+    gap: 12px;
+    color: #f9f9fa;
+}
+
+#one{
+    display: flex;
+    gap: 4px;
+}
+
+#two{
+    display: flex;
+    gap: 4px;
+}
+
+#three{
+    display: flex;
+    gap: 4px;
+}
+
+
+/* boton acompañado de la imagen 
+         boton tres */
+.article1-products>#boton-tres{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: orange;
+    color: #fff;
+    margin-top: -40px;
+    border-radius: 20px;
+    margin-left: 22px;
+    margin-bottom: 20px;
+    width: 12vh;
+    height: 1.5rem;
+}
+
+/* boton cinco */
+
+.article1-products>#boton-cinco{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: orangered;
+    color: #fff;
+    margin-top: -40px;
+    border-radius: 20px;
+    margin-left: 22px;
+    margin-bottom: 20px;
+    width: 12vh;
+    height: 1.5rem;
+}
+
+
+/* scroll */
+
+#container{
+    overflow:auto;
+    box-sizing: border-box;
+}
+
+/* Estilos para motores Webkit y blink (Chrome, Safari, Opera... )*/
+
+#container::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+#container::-webkit-scrollbar:vertical {
+    width:6px;
+}
+
+#container::-webkit-scrollbar-button:increment,.contenedor::-webkit-scrollbar-button {
+    display: none;
+} 
+
+#container::-webkit-scrollbar:horizontal {
+    height: 10px;
+}
+
+#container::-webkit-scrollbar-thumb {
+    background-color: #272944;
+    border-radius: 50px;
+    border: 1px solid;
+}
+
+

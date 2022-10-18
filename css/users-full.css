@@ -1,0 +1,496 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    font-family: sans-serif;
+    gap: 10px;
+    background-color: #55576b;
+}
+
+.body-border{
+    display: flex;
+    height: 100vh;
+    border-radius: 40px;
+    font-family: sans-serif;
+    flex: 1;
+    background-color: #363853;
+}
+
+/* ASIDE PRINCIPAL */
+
+.Principal{
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    gap: 10px;
+    font-size: 14px;
+    border-radius: 30px;
+    background-color: #272944;
+    color: #b8b6b6
+}
+
+/* (secion 1) Primer articulo */
+.Principal>.circulo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 7rem;
+    font-size: 24px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    color: #f9f9fa;
+}
+
+
+
+.Principal>.circulo>span p{
+    background-color: #404bda;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    position: absolute;
+    display: flex;
+    left: 79px;
+    top: 101px;
+}
+
+.circulo h1{
+    display: flex;
+    position: relative;
+    font-size: 27px;
+    right: 3px;
+}
+.circulo>span{
+    display: flex;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    background-color: #55576b;
+}
+
+
+/* (seccion 2) segundos articulos */
+
+.articulos-principal{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    height: 21rem;
+    font-size: 15px;
+}
+
+#articulos{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+#articulos>.cuadrado{
+    display: flex;
+    width: 20px;
+    height: 20px;
+    margin-top: 8px;
+}
+
+
+/*  (seccion 3) Tercer articulo */
+
+.articulos-ajustes{
+    display: flex;
+    align-self: center;
+    padding-right: 10px;
+    flex-direction: column;
+    height: 5rem;
+    font-size: 15px;
+}
+
+
+/* Menu general (secundario) */
+
+.secundario{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+
+/*  barra de navegacion */
+.navegar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 3rem;
+}
+
+.navegar>#uno{
+    display: flex;
+    align-items: center;
+    width: 40%;
+    height: 2rem;
+    border-radius: 20px;
+    padding-left: 20px;
+    gap: 10px;
+    color: #c7c7c7;
+    background-color: #272944;
+}
+
+.navegar>#uno p{
+    font-size: 12px;
+    color: #b8b6b6;
+}
+
+/* articulos */
+.navegar>#uno>.cuadrado{
+    display: flex;
+    align-items: center;
+}
+
+
+.navegar>#none{
+    width: 42%;
+}
+
+.navegar>#tres{
+    display: flex;
+    align-items: center;
+    padding-left:15px;
+    width: 5%;
+    height: 2rem;
+    font-size: 14px;
+    color: #f9f9fa;
+    background-color: #272944;
+    border-radius: 40px;
+    gap: 8px;
+}
+
+.navegar>#cuatro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.navegar>#cuatro>.cuadrado{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    background-color: #272944;
+    border-radius: 50%;
+}
+
+.navegar>#cuatro>.cuadrado p{
+    display: flex;
+    width: 7px;
+    height: 7px;
+    right: 78px;
+    transform: translatey(-5px);
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+}
+
+
+.navegar>#cuatro>.imagen{
+    display: flex;
+    width: 40px;
+    height: 40px;
+    background-color:#272944;
+    border-radius: 50px;
+}
+
+.navegar>#cuatro>.imagen img{
+    display: flex;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+#icono{
+    color: #fff;
+}
+/* seccion principal */
+
+.seccion-principal{
+    display: flex;
+    flex-direction: column;
+}
+
+.seccion-principal>header{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #f9f9fa;
+}
+
+.seccion-principal>header>.cabecera{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 14%;
+    height: 2rem;
+    border-radius: 50px;
+    background-color: #272944;
+    color: #f9f9fa;
+}
+
+
+.cabecera   h1{
+    padding-left: 24px;
+    font-size: 11px;
+}
+
+#arrow{
+    font-size: 12px;
+}
+
+.seccion-principal>header>.cabecera>.cuadrado{
+    display: flex;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+}
+
+
+
+/* seccion de productos */
+
+.seccion-secundaria{
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 0;
+}
+
+/* contenedor de titulos */
+
+.seccion-secundaria>.contenedor{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: #c7c7c7;
+
+}
+
+
+.seccion-secundaria>.contenedor article{
+    display: flex;
+    align-items: center;
+    width: 25vh;
+    height: 3rem;
+}
+
+
+
+.seccion-secundaria>.contenedor>#one{
+    width: 24.6vh;
+    padding-left: 30px;
+    font-size: 9px;
+    gap: 5px;
+}
+
+.seccion-secundaria>.contenedor>#two{
+    width: 24.6vh;
+    padding-left: 10px;
+    font-size: 9px;
+}
+
+.seccion-secundaria>.contenedor>#three{
+    width: 26vh;
+    font-size: 9px;
+    padding-left: 15px;
+}
+
+.seccion-secundaria>.contenedor>#four{
+    width: 21vh;
+    font-size: 9px;
+}
+
+.seccion-secundaria>.contenedor>#five{
+    width: 16vh;
+    display: flex;
+    font-size: 9px;
+    align-items: center;
+    justify-content: center;
+}
+
+.seccion-secundaria>.contenedor>#six{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25vh;
+    height: 1.5rem;
+    font-size: 9px;
+}
+
+
+
+/* seccion */
+
+.scroll{
+    display: flex;
+    flex-direction: column;
+    height: 29.2rem;
+    right: 20px;
+    overflow: auto;
+    gap: 10px;
+    background-color: #272944;
+    border-radius: 20px;
+}
+
+/* contenedor de productos (nombres, etc) */
+.container-products{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-top: 2px;
+}
+
+.container-products article{
+    display: flex;
+    align-items: center;
+    width: 25vh;
+    height: 3rem;
+}
+
+.container-products:hover{
+    background-color: #55576b;
+    border-radius: 50px;
+}
+
+
+.container-products>#uno{
+    width: 26vh;
+    padding-left: 30px;
+    font-size: 14px;
+    color: #d6d6d6;
+    gap: 10px;
+}
+
+.container-products #circulo img{
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+}
+
+.container-products #circulo{
+    display: flex;
+    height: 35px;
+    width: 35px;
+    border-radius: 50px;
+    background-color: #f9f9fa;
+}
+
+.container-products>.dos{
+    display: flex;
+    align-self: center;
+    width: 26vh;
+    padding-left: 10px;
+    font-size: 13px;
+    color: #c7c7c7;
+}
+
+.container-products>.tres{
+    width: 30vh;
+    font-size: 12px;
+    padding-left: 15px;
+    color: #b3b3b3;
+    gap: 10px;
+}
+
+.container-products>.cuatro{
+    width: 23vh;
+    font-size: 10px;
+    color: #666565;
+    gap: 10px;
+}
+
+.container-products>.cinco{
+    display: flex;
+    width: 21vh;
+    font-size: 13px;
+    gap: 10px;
+}
+
+
+
+.container-products>#seis{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 13vh;
+    height: 1.5rem;
+    gap: 10px;
+    font-size: 13px;
+    border-radius: 50px;
+    background-color:#1ce476;
+    color: #f9f9fa;
+}
+
+#lista{
+    color: #f9f9fa;
+}
+
+#icons{
+    color: #404bda;
+}
+
+#writer{
+    color: #f9f9fa;
+}
+
+#moderador{
+    color: orangered;
+}
+
+/* scroll */
+
+#container{
+    overflow:auto;
+    box-sizing: border-box;
+}
+
+/* Estilos para motores Webkit y blink (Chrome, Safari, Opera... )*/
+
+#container::-webkit-scrollbar {
+    -webkit-appearance:none;
+}
+
+#container::-webkit-scrollbar:vertical {
+    width:6px;
+}
+
+#container::-webkit-scrollbar-button:increment,.contenedor::-webkit-scrollbar-button {
+    display: none;
+} 
+
+#container::-webkit-scrollbar:horizontal {
+    height: 10px;
+}
+
+#container::-webkit-scrollbar-thumb {
+    background-color: #272944;
+    border-radius: 20px;
+    border: 1px solid #c7c7c7;
+}
+
+#container::-webkit-scrollbar-track {
+    border-radius: 10px;  
+}
